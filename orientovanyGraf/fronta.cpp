@@ -80,13 +80,6 @@ void FIFO::popByData(int data){
     }
 }
 
-
-
-Element* FIFO::top() {
-    return head;
-    
-}
-
 void FIFO::push(int data){
     Element* e = newElement(data);
     ++size;

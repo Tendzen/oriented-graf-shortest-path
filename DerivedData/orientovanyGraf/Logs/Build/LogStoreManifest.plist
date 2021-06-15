@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>048C9F4F-B440-4C21-8605-0F75BE7AAF25</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>048C9F4F-B440-4C21-8605-0F75BE7AAF25.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645474452.81165302</real>
+			<key>timeStoppedRecording</key>
+			<real>645474456.27156603</real>
+			<key>title</key>
+			<string>Build orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>048C9F4F-B440-4C21-8605-0F75BE7AAF25</string>
+		</dict>
 		<key>062F7397-06EF-42FD-B1BB-E179A22C018E</key>
 		<dict>
 			<key>className</key>
@@ -74,6 +108,108 @@
 			<key>uniqueIdentifier</key>
 			<string>238AEC47-1BE6-46BA-AB65-44CC537C2D09</string>
 		</dict>
+		<key>253E88F8-B6C0-418D-A927-02EAD57D8917</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>253E88F8-B6C0-418D-A927-02EAD57D8917.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645474490.01144302</real>
+			<key>timeStoppedRecording</key>
+			<real>645474490.04592896</real>
+			<key>title</key>
+			<string>Build orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>253E88F8-B6C0-418D-A927-02EAD57D8917</string>
+		</dict>
+		<key>5AE850FE-20CE-446A-AF00-8CF1421EC23A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5AE850FE-20CE-446A-AF00-8CF1421EC23A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645474463.60503805</real>
+			<key>timeStoppedRecording</key>
+			<real>645474463.64059901</real>
+			<key>title</key>
+			<string>Build orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>5AE850FE-20CE-446A-AF00-8CF1421EC23A</string>
+		</dict>
+		<key>6B9B6DFD-3AD1-489D-8C02-5B4870A1E221</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6B9B6DFD-3AD1-489D-8C02-5B4870A1E221.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645474589.60309803</real>
+			<key>timeStoppedRecording</key>
+			<real>645474589.648489</real>
+			<key>title</key>
+			<string>Build orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>6B9B6DFD-3AD1-489D-8C02-5B4870A1E221</string>
+		</dict>
 		<key>6D154934-1461-42EF-8AEC-BAB10F9B8B88</key>
 		<dict>
 			<key>className</key>
@@ -107,6 +243,40 @@
 			<string>Build orientovanyGraf</string>
 			<key>uniqueIdentifier</key>
 			<string>6D154934-1461-42EF-8AEC-BAB10F9B8B88</string>
+		</dict>
+		<key>7D210093-FFC3-4317-8FBE-BC953BA06F2C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7D210093-FFC3-4317-8FBE-BC953BA06F2C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645474479.70575595</real>
+			<key>timeStoppedRecording</key>
+			<real>645474483.03838205</real>
+			<key>title</key>
+			<string>Build orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>7D210093-FFC3-4317-8FBE-BC953BA06F2C</string>
 		</dict>
 		<key>7E161CE0-556E-44BB-80FE-AFBA4955DD25</key>
 		<dict>
@@ -243,6 +413,40 @@
 			<string>Build orientovanyGraf</string>
 			<key>uniqueIdentifier</key>
 			<string>8D1F39F5-5A79-409B-853E-F98613D96038</string>
+		</dict>
+		<key>969BC6AF-D453-49E2-81D2-9959BEF97096</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>969BC6AF-D453-49E2-81D2-9959BEF97096.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645474577.02841496</real>
+			<key>timeStoppedRecording</key>
+			<real>645474581.01223695</real>
+			<key>title</key>
+			<string>Build orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>969BC6AF-D453-49E2-81D2-9959BEF97096</string>
 		</dict>
 		<key>B135FD7B-F2BD-4934-9BEB-89ADF4603838</key>
 		<dict>

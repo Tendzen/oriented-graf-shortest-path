@@ -9,13 +9,9 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-#include <cstring>
-#include <istream>
-#include <sstream>
 using namespace std;
 
-extern int radky;
-extern int sloupce;
+extern int uzly;
 extern string nazevSouboru; // nazev filu v kterem mate matice
 typedef int T;
 
@@ -38,7 +34,6 @@ public:
     Element* getHead() { return head; }
     Element* getTail() { return tail; }
     int getSize() { return size; }
-    Element* top();
     Element* pop();
     bool containInt(int data);
     void popByData(int data);
@@ -48,9 +43,9 @@ public:
 };
 
 
-void nactiDataZeSouboru(string &souborDat, int radkySloupce);
+void nactiDataZeSouboru(string &souborDat, int uzly);
 
-int kolikRadkuSloupce(string fileName);
+int kolikUzlu(string fileName);
 
 void dijkstraAlgoritm(int **pole, int od, int kam);
 
@@ -58,10 +53,6 @@ int minDistance(int dist[], FIFO *fronta);
 
 void printCestu(vector<int>S,int &n);
 
-int lenght(int u, int v);
-
 void printDelkuCesty(int pole[], int kam);
 
 void cinIgnore();
-
-int returnNejmensiIndexHrany(int **pole, int radka);

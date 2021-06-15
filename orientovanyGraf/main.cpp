@@ -9,8 +9,8 @@
 int main() {
     
  
-    sloupce = kolikRadkuSloupce(nazevSouboru);
-    nactiDataZeSouboru(nazevSouboru, sloupce);
+    uzly = kolikUzlu(nazevSouboru);
+    nactiDataZeSouboru(nazevSouboru, uzly);
     
     return 0;
 }
