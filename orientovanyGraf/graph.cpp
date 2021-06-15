@@ -9,7 +9,7 @@
 
 int pocetUzlu;
 
-string nazevSouboru;
+string nazevSouboru; // promena v kterou jsem daval celou cestu
 
 
 void cinIgnore() {
@@ -33,7 +33,7 @@ void nactiDataZeSouboruASpustAlgoritm(string &nazevSouboru, int pocetUzlu){
     int **adjacencyMatrice;
     int i,j;
     adjacencyMatrice = new int *[pocetUzlu];
-    for(int i = 0; i <10; i++){
+    for(int i = 0; i <pocetUzlu; i++){
         adjacencyMatrice[i] = new int[pocetUzlu];
     }
     while(!soubor.is_open()){
@@ -56,12 +56,10 @@ void nactiDataZeSouboruASpustAlgoritm(string &nazevSouboru, int pocetUzlu){
     }
     soubor.open(nazevSouboru);
     if(soubor.is_open()){
-        int x;
         while (!soubor.eof()) {
             for (i=0; i<pocetUzlu; i++){
                 for(j=0; j<pocetUzlu; j++){
                     soubor >> adjacencyMatrice[i][j];
-                    
                 }
             }
             if(soubor.eof()){

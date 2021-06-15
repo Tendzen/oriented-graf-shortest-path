@@ -142,6 +142,40 @@
 			<key>uniqueIdentifier</key>
 			<string>3F48BC02-652E-445E-9FEE-5ED413C5C5C3</string>
 		</dict>
+		<key>490BAB53-75B6-4334-AC00-A3F154083CD4</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>490BAB53-75B6-4334-AC00-A3F154083CD4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645484153.64223599</real>
+			<key>timeStoppedRecording</key>
+			<real>645484192.70994103</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>490BAB53-75B6-4334-AC00-A3F154083CD4</string>
+		</dict>
 		<key>69A554A0-FCE6-4D12-BC0F-27A5BDB57C4C</key>
 		<dict>
 			<key>className</key>
@@ -278,6 +312,40 @@
 			<key>uniqueIdentifier</key>
 			<string>85AABE48-F15F-4650-8750-26BDB230C3C5</string>
 		</dict>
+		<key>85CE11C8-C591-4845-9FA1-623E514431B6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>85CE11C8-C591-4845-9FA1-623E514431B6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645484330.90075898</real>
+			<key>timeStoppedRecording</key>
+			<real>645484384.15075898</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>85CE11C8-C591-4845-9FA1-623E514431B6</string>
+		</dict>
 		<key>867B1187-8040-4799-9653-561E6E7D6331</key>
 		<dict>
 			<key>className</key>
@@ -413,6 +481,40 @@
 			<string>Run orientovanyGraf</string>
 			<key>uniqueIdentifier</key>
 			<string>B751686A-0E0F-4903-9334-2ED72E86BEF0</string>
+		</dict>
+		<key>BAC06724-50A9-4BB3-827C-112DE83217A3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BAC06724-50A9-4BB3-827C-112DE83217A3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645484387.41368198</real>
+			<key>timeStoppedRecording</key>
+			<real>645484389.59143806</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>BAC06724-50A9-4BB3-827C-112DE83217A3</string>
 		</dict>
 		<key>C9C1F660-543D-4645-81F5-5849D67D4D37</key>
 		<dict>
