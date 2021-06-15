@@ -9,8 +9,8 @@
 int main() {
     
  
-    uzly = kolikUzlu(nazevSouboru);
-    nactiDataZeSouboru(nazevSouboru, uzly);
+    pocetUzlu = kolikUzlu(nazevSouboru);
+    nactiDataZeSouboruASpustAlgoritm(nazevSouboru, pocetUzlu);
     
     return 0;
 }

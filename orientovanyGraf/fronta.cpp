@@ -16,21 +16,21 @@ Element* newElement(int d){
 }
 
 
-FIFO::FIFO() {
+List::List() {
     size = 0;
     head = nullptr;
     tail = nullptr;
 }
 
-bool FIFO::isEmpty() {
+bool List::isEmpty() {
     return head == nullptr;
 }
           
-FIFO::~FIFO() {
+List::~List() {
     clean();
 }
 
-void FIFO::clean() {
+void List::clean() {
     if (!isEmpty()) {
         Element* pom;
         while (head != nullptr) {
@@ -43,7 +43,7 @@ void FIFO::clean() {
     }
 }
 
-Element* FIFO::pop() {
+Element* List::pop() {
     if (isEmpty()){
         return nullptr;}
     Element* pom = head;
@@ -53,7 +53,7 @@ Element* FIFO::pop() {
     return pom;
 }
 
-void FIFO::popByData(int data){
+void List::popByData(int data){
     if (isEmpty()){
         return;}
     Element* pom = head;
@@ -80,7 +80,7 @@ void FIFO::popByData(int data){
     }
 }
 
-void FIFO::push(int data){
+void List::push(int data){
     Element* e = newElement(data);
     ++size;
     if(head == nullptr){
@@ -92,7 +92,7 @@ void FIFO::push(int data){
     }
 }
 
-bool FIFO::containInt(int data){
+bool List::containInt(int data){
     if (isEmpty()){
         return false;}
     Element* pom = head;

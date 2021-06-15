@@ -11,7 +11,7 @@
 #include <string>
 using namespace std;
 
-extern int uzly;
+extern int pocetUzlu;
 extern string nazevSouboru; // nazev filu v kterem mate matice
 typedef int T;
 
@@ -22,13 +22,13 @@ struct Element {
 
 Element* newElement(int d);
 
-class FIFO {
+class List {
 private:
     Element *head, *tail;
     int size;
 public:
-    FIFO();
-    ~FIFO();
+    List();
+    ~List();
     void setHead(Element *h) { head = h; }
     void setTail(Element *t) { tail = t; }
     Element* getHead() { return head; }
@@ -43,16 +43,16 @@ public:
 };
 
 
-void nactiDataZeSouboru(string &souborDat, int uzly);
+void nactiDataZeSouboruASpustAlgoritm(string &souborDat, int uzly);
 
 int kolikUzlu(string fileName);
 
-void dijkstraAlgoritm(int **pole, int od, int kam);
+void dijkstraAlgoritm(int **adjacencyMatice, int od, int kam);
 
-int minDistance(int dist[], FIFO *fronta);
+int minDistance(int dist[], List *fronta);
 
-void printCestu(vector<int>S,int &n);
+void printCestu(vector<int>poleSCestou,int &pocetUzluVPoleSCestou);
 
-void printDelkuCesty(int pole[], int kam);
+void printDelkuCesty(int poleSDelkamiHran[], int kam);
 
 void cinIgnore();

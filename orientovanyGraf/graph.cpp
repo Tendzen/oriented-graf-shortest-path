@@ -7,7 +7,7 @@
 
 #include "graph.hpp"
 
-int uzly;
+int pocetUzlu;
 
 string nazevSouboru = "/Users/Imcheldon/Documents/spojovy seznam c++/trida/orientovanyGraf/orientovanyGraf/adjacencyMatice.txt";
 
@@ -28,13 +28,13 @@ int kolikUzlu(string fileName){
     return uzly;
 }
 
-void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
+void nactiDataZeSouboruASpustAlgoritm(string &nazevSouboru, int pocetUzlu){
     ifstream soubor;
-    int **pole;
+    int **adjacencyMatrice;
     int i,j;
-    pole = new int *[radkySloupce];
+    adjacencyMatrice = new int *[pocetUzlu];
     for(int i = 0; i <10; i++){
-        pole[i] = new int[radkySloupce];
+        adjacencyMatrice[i] = new int[pocetUzlu];
     }
     while(!soubor.is_open()){
 //        cout << "Zadej nazev souboru, v kterem mate datu: ";
@@ -49,18 +49,18 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
             cinIgnore();
         }
     }
-    for(i=0; i<radkySloupce; i++){
-        for(j=0; j<radkySloupce; j++){
-                pole[i][j] = 0;
+    for(i=0; i<pocetUzlu; i++){
+        for(j=0; j<pocetUzlu; j++){
+                adjacencyMatrice[i][j] = 0;
         }
     }
     soubor.open(nazevSouboru);
     if(soubor.is_open()){
         int x;
         while (!soubor.eof()) {
-            for (i=0; i<radkySloupce; i++){
-                for(j=0; j<radkySloupce; j++){
-                    soubor >> pole[i][j];
+            for (i=0; i<pocetUzlu; i++){
+                for(j=0; j<pocetUzlu; j++){
+                    soubor >> adjacencyMatrice[i][j];
                     
                 }
             }
@@ -77,7 +77,7 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
     while(true){
         cout << "Zadejte index výchozího bodu: ";
         cin >> od;
-        if(!cin.good() || (od > radkySloupce || od <0)){
+        if(!cin.good() || (od > pocetUzlu || od <0)){
             cinIgnore();
         }else{
             od -= 1;
@@ -86,7 +86,7 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
     while(true){
         cout << "Zadejte index koncového bodu: ";
         cin >> kam;
-        if(!cin.good() || (kam > radkySloupce || kam <0)){
+        if(!cin.good() || (kam > pocetUzlu || kam <0)){
             cinIgnore();
         }
         else{
@@ -94,47 +94,47 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
             break;
         }
     }
-    dijkstraAlgoritm(pole, od, kam);
-    delete[] pole;
+    dijkstraAlgoritm(adjacencyMatrice, od, kam);
+    delete[] adjacencyMatrice;
 }
 
 
 
-void dijkstraAlgoritm(int **pole, int od, int kam){
-    int dist[uzly], prev[uzly]; // dist = delka cesty // prev - predchozi nejblizsi uzel
-    FIFO* Q = new FIFO;
-    vector<int>S;
+void dijkstraAlgoritm(int **adjacencyMatice, int od, int kam){
+    int dist[pocetUzlu], prev[pocetUzlu]; // dist = delka cesty // prev - predchozi nejblizsi uzel
+    List* listUzlu = new List;
+    vector<int>poleSCestou;
     int u;
-    for(int i =0; i<uzly; i++){
+    for(int i =0; i<pocetUzlu; i++){
         dist[i] = INT_MAX;
         prev[i] = -1;
-        Q->push(i);
+        listUzlu->push(i);
     }
     dist[od] = 0;
-    int alt,d;
-    while(!Q->isEmpty()){
-        u = minDistance(dist, Q);
-        Q->popByData(u);
+    int alt,delkaHrany; // alt = is the length of the path from the root node to the neighbor node v if it were to go through u
+    while(!listUzlu->isEmpty()){
+        u = minDistance(dist, listUzlu);
+        listUzlu->popByData(u);
             //
         if(u == kam){
             u = kam;
             while(u!=-1){
                 if(prev[u] != -1 || u == od){
-                S.insert(S.begin(),u);
-                u = prev[u];
+                    poleSCestou.insert(poleSCestou.begin(),u);
+                    u = prev[u];
                 }
                 else{
                     cout << "Od " << od+1 << " do " << kam+1 << " nevede žádná z cest" << endl;
                     return;
                 }
             }
-        break;
+            break;
         }
-        for(int v = 0; v<uzly; v++){
-            if(pole[u][v] !=0){
-                if(Q->containInt(v)){
-                    d = pole[u][v];
-                    alt = dist[u] + d;
+        for(int v = 0; v<pocetUzlu; v++){
+            if(adjacencyMatice[u][v] !=0){
+                if(listUzlu->containInt(v)){
+                    delkaHrany = adjacencyMatice[u][v];
+                    alt = dist[u] + delkaHrany;
                     if(alt<dist[v]){
                         dist[v] = alt;
                         prev[v] = u;
@@ -144,36 +144,35 @@ void dijkstraAlgoritm(int **pole, int od, int kam){
         }
     }
     
-    int n = S.size();
+    int n = poleSCestou.size();
     printDelkuCesty(dist, kam);
-    printCestu(S,n);
-    delete Q;
+    printCestu(poleSCestou,n);
+    delete listUzlu;
 }
 
-int minDistance(int dist[], FIFO *fronta){
+int minDistance(int dist[], List *fronta){
     int min = INT_MAX; //nekonecno ( velke cislo)
-    int index_min = 0;
-    for(int i =0; i<uzly; i++){
+    int indexMin = 0;
+    for(int i =0; i<pocetUzlu; i++){
         if(fronta->containInt(i) && dist[i] <= min){
             min = dist[i];
-            index_min = i;
+            indexMin = i;
         }
     }
-    return index_min;
+    return indexMin;
 }
 
 
-void printDelkuCesty(int pole[], int kam){
-    int delka = 0;
-    cout << "Delka cesty: "  << pole[kam] << endl;
+void printDelkuCesty(int poleSDelkamiHran[], int kam){
+    cout << "Delka cesty: "  << poleSDelkamiHran[kam] << endl;
 }
 
-void printCestu(vector<int>S,int &n){
+void printCestu(vector<int>poleSCestou,int &pocetUzluVPoleSCestou){
     int uzel;
-    for(int i =0; i<n; i++){
-        uzel = S[i];
+    for(int i =0; i<pocetUzluVPoleSCestou; i++){
+        uzel = poleSCestou[i];
         cout << uzel+1;
-        if(i==n-1){
+        if(i==pocetUzluVPoleSCestou-1){
             break;
         }
         cout << " -> ";
