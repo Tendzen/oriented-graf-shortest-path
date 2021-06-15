@@ -12,7 +12,6 @@
 #include <cstring>
 #include <istream>
 #include <sstream>
-#include <stdio.h>
 using namespace std;
 
 extern int radky;
@@ -51,21 +50,15 @@ public:
 
 void nactiDataZeSouboru(string &souborDat, int radkySloupce);
 
-
 int kolikRadkuSloupce(string fileName);
-
 
 void dijkstraAlgoritm(int **pole, int od, int kam);
 
 int minDistance(int dist[], FIFO *fronta);
 
-bool vArrayNeboNe(int pole[], int prvek);
-
 void printCestu(vector<int>S,int &n);
 
 int lenght(int u, int v);
-
-int deleteElement(int arr[], int n, int x);
 
 void printDelkuCesty(int pole[], int kam);
 

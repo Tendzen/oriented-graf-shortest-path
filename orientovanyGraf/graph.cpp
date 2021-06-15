@@ -24,34 +24,8 @@ int kolikRadkuSloupce(string fileName){
 }
 
 
-
-bool vPoleNeboNe(bool pole[], int prvek){
-    if(pole[prvek] == true){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
 int lenght(int u, int v){
     return u + v;
-}
-
-int deleteElement(int arr[], int n, int x){
-    int i;
-    for (i=0; i<n; i++){
-        if (arr[i] == x){
-            break;
-        }
-    }
-    if (i < n){
-        n = n - 1;
-        for (int j=i; j<n; j++){
-            arr[j] = arr[j+1];
-        }
-    }
-    return n;
 }
 
 void printDelkuCesty(int pole[], int kam){
@@ -90,7 +64,7 @@ int returnNejmensiIndexHrany(int **pole, int uzel){
 
 int minDistance(int dist[], FIFO *fronta){
     int min = INT_MAX; //nekonecno ( velke cislo)
-    int index_min;
+    int index_min = 0;
     for(int i =0; i<sloupce; i++){
         if(fronta->containInt(i) && dist[i] <= min){
             min = dist[i];
@@ -125,7 +99,7 @@ void dijkstraAlgoritm(int **pole, int od, int kam){
                 u = uzlyProhlednute[u];
                 }
                 else{
-                    cout << "Od " << od+1 << " Do " << kam+1 << " Nevede žadna cesta" << endl;
+                    cout << "Od " << od+1 << " do " << kam+1 << " nevede žádná z cest" << endl;
                     return;
                 }
             }
@@ -170,6 +144,9 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
         pole[i] = new int[radkySloupce];
     }
     while(!soubor.is_open()){
+//        cout << "Zadej nazev souboru, v kterem mate datu: ";
+//        cin >> nazevSouboru;
+//        cout << endl;
         soubor.open(nazevSouboru);
         if(soubor.is_open()){
             soubor.close();
@@ -205,7 +182,7 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
     soubor.close();
     int od, kam;
     while(true){
-        cout << "Zadejte index zacatku cesty: ";
+        cout << "Zadejte index výchozího bodu: ";
         cin >> od;
         if(!cin.good() || (od > radkySloupce || od <0)){
             cinIgnore();
@@ -214,7 +191,7 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
             break;}
     }
     while(true){
-        cout << "Zadejte index konce cesty: ";
+        cout << "Zadejte index koncového bodu: ";
         cin >> kam;
         if(!cin.good() || (kam > radkySloupce || kam <0)){
             cinIgnore();

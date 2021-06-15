@@ -6,6 +6,108 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>23DC1958-ACCC-466B-8634-4629F635E652</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>23DC1958-ACCC-466B-8634-4629F635E652.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473538.53998995</real>
+			<key>timeStoppedRecording</key>
+			<real>645473561.92708099</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>23DC1958-ACCC-466B-8634-4629F635E652</string>
+		</dict>
+		<key>3EFC1B37-9ED2-4179-B6C6-DD4DE845E04A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3EFC1B37-9ED2-4179-B6C6-DD4DE845E04A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645472893.33397901</real>
+			<key>timeStoppedRecording</key>
+			<real>645473005.984833</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>3EFC1B37-9ED2-4179-B6C6-DD4DE845E04A</string>
+		</dict>
+		<key>3F48BC02-652E-445E-9FEE-5ED413C5C5C3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3F48BC02-652E-445E-9FEE-5ED413C5C5C3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473482.73645997</real>
+			<key>timeStoppedRecording</key>
+			<real>645473490.84907496</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>3F48BC02-652E-445E-9FEE-5ED413C5C5C3</string>
+		</dict>
 		<key>69A554A0-FCE6-4D12-BC0F-27A5BDB57C4C</key>
 		<dict>
 			<key>className</key>
@@ -39,6 +141,244 @@
 			<string>Run orientovanyGraf</string>
 			<key>uniqueIdentifier</key>
 			<string>69A554A0-FCE6-4D12-BC0F-27A5BDB57C4C</string>
+		</dict>
+		<key>867B1187-8040-4799-9653-561E6E7D6331</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>867B1187-8040-4799-9653-561E6E7D6331.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473094.62126601</real>
+			<key>timeStoppedRecording</key>
+			<real>645473095.94582605</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>867B1187-8040-4799-9653-561E6E7D6331</string>
+		</dict>
+		<key>A079394B-D04C-479F-8062-3F4B5C0297FB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A079394B-D04C-479F-8062-3F4B5C0297FB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473159.88428605</real>
+			<key>timeStoppedRecording</key>
+			<real>645473165.72217298</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>A079394B-D04C-479F-8062-3F4B5C0297FB</string>
+		</dict>
+		<key>B08A3956-4C33-4AEA-B8F5-27CF0E788C8C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B08A3956-4C33-4AEA-B8F5-27CF0E788C8C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473212.48829305</real>
+			<key>timeStoppedRecording</key>
+			<real>645473218.30825996</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>B08A3956-4C33-4AEA-B8F5-27CF0E788C8C</string>
+		</dict>
+		<key>B751686A-0E0F-4903-9334-2ED72E86BEF0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B751686A-0E0F-4903-9334-2ED72E86BEF0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473502.90685594</real>
+			<key>timeStoppedRecording</key>
+			<real>645473506.51100802</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>B751686A-0E0F-4903-9334-2ED72E86BEF0</string>
+		</dict>
+		<key>D4945F94-98EE-4BBF-ACBC-2DC84B21F0F9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D4945F94-98EE-4BBF-ACBC-2DC84B21F0F9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473508.26415706</real>
+			<key>timeStoppedRecording</key>
+			<real>645473511.63422501</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>D4945F94-98EE-4BBF-ACBC-2DC84B21F0F9</string>
+		</dict>
+		<key>E4603844-B2EC-4614-8C4E-D00A52E853BC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E4603844-B2EC-4614-8C4E-D00A52E853BC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473494.14176095</real>
+			<key>timeStoppedRecording</key>
+			<real>645473498.68317902</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>E4603844-B2EC-4614-8C4E-D00A52E853BC</string>
+		</dict>
+		<key>FC77F210-80B2-468F-BF85-9451A2179A0A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FC77F210-80B2-468F-BF85-9451A2179A0A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>orientovanyGraf project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>orientovanyGraf</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orientovanyGraf</string>
+			<key>timeStartedRecording</key>
+			<real>645473176.77010798</real>
+			<key>timeStoppedRecording</key>
+			<real>645473181.87760496</real>
+			<key>title</key>
+			<string>Run orientovanyGraf</string>
+			<key>uniqueIdentifier</key>
+			<string>FC77F210-80B2-468F-BF85-9451A2179A0A</string>
 		</dict>
 	</dict>
 </dict>
