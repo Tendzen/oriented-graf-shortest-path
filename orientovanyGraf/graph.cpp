@@ -9,7 +9,7 @@
 
 int pocetUzlu;
 
-string nazevSouboru = "/Users/Imcheldon/Documents/spojovy seznam c++/trida/orientovanyGraf/orientovanyGraf/adjacencyMatice.txt";
+string nazevSouboru;
 
 
 void cinIgnore() {
@@ -37,9 +37,9 @@ void nactiDataZeSouboruASpustAlgoritm(string &nazevSouboru, int pocetUzlu){
         adjacencyMatrice[i] = new int[pocetUzlu];
     }
     while(!soubor.is_open()){
-//        cout << "Zadej nazev souboru, v kterem mate datu: ";
-//        cin >> nazevSouboru;
-//        cout << endl;
+        cout << "Zadej nazev souboru, v kterem mate datu: ";
+        cin >> nazevSouboru;
+        cout << endl;
         soubor.open(nazevSouboru);
         if(soubor.is_open()){
             soubor.close();
