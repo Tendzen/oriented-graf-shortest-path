@@ -1,5 +1,5 @@
 //
-//  fronta.cpp
+//  list.cpp
 //  orientovanyGraf
 //
 //  Created by Paul Ekishev on 14/06/2021.
