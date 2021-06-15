@@ -18,7 +18,35 @@ using namespace std;
 extern int radky;
 extern int sloupce;
 extern string nazevSouboru; // nazev filu v kterem mate matice
+typedef int T;
 
+struct Element {
+    T data;
+    Element* next;
+};
+
+Element* newElement(int d);
+
+class FIFO {
+private:
+    Element *head, *tail;
+    int size;
+public:
+    FIFO();
+    ~FIFO();
+    void setHead(Element *h) { head = h; }
+    void setTail(Element *t) { tail = t; }
+    Element* getHead() { return head; }
+    Element* getTail() { return tail; }
+    int getSize() { return size; }
+    Element* top();
+    Element* pop();
+    bool containInt(int data);
+    void popByData(int data);
+    void push(int data);
+    bool isEmpty();
+    void clean();
+};
 
 
 void nactiDataZeSouboru(string &souborDat, int radkySloupce);
@@ -29,14 +57,18 @@ int kolikRadkuSloupce(string fileName);
 
 void dijkstraAlgoritm(int **pole, int od, int kam);
 
-int minDistance(int dist[], int uzelyProhlednute[]);
+int minDistance(int dist[], FIFO *fronta);
 
 bool vArrayNeboNe(int pole[], int prvek);
 
-void printCestu(vector<int>Q, int &n);
+void printCestu(vector<int>S,int &n);
 
 int lenght(int u, int v);
 
 int deleteElement(int arr[], int n, int x);
 
 void printDelkuCesty(int pole[], int kam);
+
+void cinIgnore();
+
+int returnNejmensiIndexHrany(int **pole, int radka);

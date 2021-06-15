@@ -55,17 +55,16 @@ int deleteElement(int arr[], int n, int x){
 }
 
 void printDelkuCesty(int pole[], int kam){
-    int delka;
-    for(int i = 0; i<kam; i++){
-        delka += pole[i];
-    }
-    cout << "Delka cesty: " << delka << endl;
+    int delka = 0;
+    cout << "Delka pole: "  << pole[kam] << endl;
 }
 
 
-void printCestu(vector<int>Q,int &n){
+void printCestu(vector<int>S,int &n){
+    int uzel;
     for(int i =0; i<n; i++){
-        cout << Q[i];
+        uzel = S[i];
+        cout << uzel+1;
         if(i==n-1){
             break;
         }
@@ -74,11 +73,26 @@ void printCestu(vector<int>Q,int &n){
     cout << endl;
 }
 
-int minDistance(int dist[], int uzelyProhlednute[]){
+int returnNejmensiIndexHrany(int **pole, int uzel){
+    int v, i, indexNejmensiHrany;
+    int cenaNejmensiHrany = INT_MAX;
+    for(i = 0; i<sloupce; i++){
+        if(pole[uzel][i] !=0){
+            v = pole[uzel][i];
+            if(cenaNejmensiHrany > v){
+                indexNejmensiHrany = i;
+                cenaNejmensiHrany = v;
+            }
+        }
+    }
+    return i;
+}
+
+int minDistance(int dist[], FIFO *fronta){
     int min = INT_MAX; //nekonecno ( velke cislo)
     int index_min;
     for(int i =0; i<sloupce; i++){
-        if(uzelyProhlednute[i] == -1 && dist[i] <= min){
+        if(fronta->containInt(i) && dist[i] <= min){
             min = dist[i];
             index_min = i;
         }
@@ -89,48 +103,61 @@ int minDistance(int dist[], int uzelyProhlednute[]){
 
 void dijkstraAlgoritm(int **pole, int od, int kam){
     int dist[sloupce], uzlyProhlednute[sloupce]; // dist = delka cesty // array vrcholu
-    vector<int>Q;
+    FIFO* Q = new FIFO;
+    vector<int>S;
     int u;
     for(int i =0; i<sloupce; i++){
         dist[i] = INT_MAX;
         uzlyProhlednute[i] = -1;
-        Q.push_back(i);
+        Q->push(i);
     }
     dist[od] = 0;
-    int n = Q.size();
     int alt,d;
-    printCestu(Q,n);
-    while(n!=0){
-        //hlidam min distance l
-            u = minDistance(dist, uzlyProhlednute);
-            Q.erase(Q.begin() + u-1);
+    while(!Q->isEmpty()){
+        u = minDistance(dist, Q); // возможно нужно изменить?
+        Q->popByData(u);
             //
         if(u == kam){
-            vector<int>S;
             u = kam;
-            if(uzlyProhlednute[u] != -1 || u == od){
-                while(u != -1){
-                    S.insert(S.begin(),u);
-                    u = uzlyProhlednute[u];
+            while(u!=-1){
+                if(uzlyProhlednute[u] != -1 || u == od){
+                S.insert(S.begin(),u);
+                u = uzlyProhlednute[u];
+                }
+                else{
+                    cout << "Od " << od+1 << " Do " << kam+1 << " Nevede žadna cesta" << endl;
+                    return;
                 }
             }
-            break;
+        break;
         }
         for(int v = 0; v<sloupce; v++){
             if(pole[u][v] !=0){
-                d = pole[u][v];
-                alt = dist[u] + lenght(dist[u],dist[d]);
-                if(alt<dist[d]){
-                    dist[d] = alt;
-                    uzlyProhlednute[d] = u;
+                if(Q->containInt(v)){
+                    d = pole[u][v];
+                    alt = dist[u] + d;
+                    if(alt<dist[v]){
+                        dist[v] = alt;
+                        uzlyProhlednute[v] = u;
+                    }
                 }
             }
         }
-        n = Q.size();
     }
+    
+    int n = S.size();
+    printDelkuCesty(dist, kam);
+    printCestu(S,n);
+    delete Q;
+}
 
-    printDelkuCesty(dist,kam);
-    printCestu(Q,n);
+
+
+
+void cinIgnore() {
+    cin.clear();
+    cin.ignore(433443, '\n');
+    cout << "Spatne! Zadej znovu" << endl;
 }
 
 
@@ -143,16 +170,13 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
         pole[i] = new int[radkySloupce];
     }
     while(!soubor.is_open()){
-        
         soubor.open(nazevSouboru);
         if(soubor.is_open()){
             soubor.close();
             break;
         }
         else{
-            cout << "Chyba nesmohl otevrit,zadej znovu\n";
-            soubor.clear();
-            soubor.ignore(433443, '\n');
+            cinIgnore();
         }
     }
     for(i=0; i<radkySloupce; i++){
@@ -160,12 +184,6 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
                 pole[i][j] = 0;
         }
     }
-    for (int i = 0; i <radkySloupce; ++i){
-           for (int j = 0; j < radkySloupce; ++j){
-               cout << pole[i][j] << ' ';
-           }
-           cout << endl;
-       }
     soubor.open(nazevSouboru);
     if(soubor.is_open()){
         int x;
@@ -185,37 +203,28 @@ void nactiDataZeSouboru(string &nazevSouboru, int radkySloupce){
         cout << "Chyba, soubor nepodarilo otevrit" << endl;
     }
     soubor.close();
-    cout << "nove pole: " << endl;
-    for (int i = 0; i <radkySloupce; ++i){
-           for (int j = 0; j < radkySloupce; ++j){
-               cout << pole[i][j] << ' ';
-           }
-           cout << endl;
-       }
     int od, kam;
     while(true){
-    cout << "Zadejte index zacatku cesty: ";
-    cin >> od;
-    if(od > radkySloupce && kam <=0){
-        cout << "Chyba! zadejte znovu" << endl;
-        cin.clear();
-        cin.ignore(433443, '\n');
-    }else{
-        break;
-    }
+        cout << "Zadejte index zacatku cesty: ";
+        cin >> od;
+        if(!cin.good() || (od > radkySloupce || od <0)){
+            cinIgnore();
+        }else{
+            od -= 1;
+            break;}
     }
     while(true){
-    cout << "Zadejte index konce cesty: ";
-    cin >> kam;
-    if(kam > radkySloupce && kam <=0){
-        cout << "Chyba! zadejte znovu" << endl;
-        cin.clear();
-        cin.ignore(433443, '\n');
-    }
-    else{
-        break;
-    }
+        cout << "Zadejte index konce cesty: ";
+        cin >> kam;
+        if(!cin.good() || (kam > radkySloupce || kam <0)){
+            cinIgnore();
+        }
+        else{
+            kam -= 1;
+            break;
+        }
     }
     dijkstraAlgoritm(pole, od, kam);
+    delete[] pole;
 }
 

@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>58995D08-6001-4A26-870A-A3B9AFB870F9</key>
+		<key>2FFDCBEC-6944-4CF1-ACB5-2D499C10EE4B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>58995D08-6001-4A26-870A-A3B9AFB870F9.xcactivitylog</string>
+			<string>2FFDCBEC-6944-4CF1-ACB5-2D499C10EE4B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +26,13 @@
 			<key>signature</key>
 			<string>orientovanyGraf-cnsrlpxlfitqqjfsbpynchkafbnd</string>
 			<key>timeStartedRecording</key>
-			<real>645291717.97163904</real>
+			<real>645460257.708516</real>
 			<key>timeStoppedRecording</key>
-			<real>645291720.17301905</real>
+			<real>645460261.61411905</real>
 			<key>title</key>
 			<string>Build target orientovanyGraf</string>
 			<key>uniqueIdentifier</key>
-			<string>58995D08-6001-4A26-870A-A3B9AFB870F9</string>
+			<string>2FFDCBEC-6944-4CF1-ACB5-2D499C10EE4B</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

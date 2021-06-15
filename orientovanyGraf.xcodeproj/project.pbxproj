@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E9BA5C372673A51B00422150 /* graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9BA5C352673A51B00422150 /* graph.cpp */; };
 		E9C6892126722B8A0047EA95 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9C6892026722B8A0047EA95 /* main.cpp */; };
+		E9EA049D26778E0700F3F6F9 /* fronta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9EA049B26778E0700F3F6F9 /* fronta.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		E9BA5C3D2673A8A500422150 /* adjacencyMatice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adjacencyMatice.txt; sourceTree = "<group>"; };
 		E9C6891D26722B8A0047EA95 /* orientovanyGraf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = orientovanyGraf; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C6892026722B8A0047EA95 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E9EA049B26778E0700F3F6F9 /* fronta.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fronta.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E9C6892026722B8A0047EA95 /* main.cpp */,
 				E9BA5C352673A51B00422150 /* graph.cpp */,
 				E9BA5C362673A51B00422150 /* graph.hpp */,
+				E9EA049B26778E0700F3F6F9 /* fronta.cpp */,
 				E9BA5C3D2673A8A500422150 /* adjacencyMatice.txt */,
 			);
 			path = orientovanyGraf;
@@ -127,6 +130,7 @@
 			files = (
 				E9BA5C372673A51B00422150 /* graph.cpp in Sources */,
 				E9C6892126722B8A0047EA95 /* main.cpp in Sources */,
+				E9EA049D26778E0700F3F6F9 /* fronta.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
